@@ -73,10 +73,12 @@ p {
 .price {
     color: var(--primaria1);
     font-family: var(--font2);
+    font-size: 2em;
 }
 
 p s {
     color: black;
+    font-size: 11px;
 }
 
 .cart {
