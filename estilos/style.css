@@ -24,31 +24,30 @@
 body, html {
     background-color: var(--primaria2);
     font-family: var(--font1);
-    width: 350px;
 }
 main {
     position: relative;
     height: 100vh;
     width: 100vw;
 }
-section {
+section#layout {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-    width: 300px;
-    height: 570px;
+    width: 278px;
+    height: 550px;
     background-color: white;
     border-radius: 20px;
 }
-section > div#imagem {
+section#layout > div#imagem {
 background: white url(../images/image-product-desktop.jpg) no-repeat;
 background-size: cover;
 background-position: center;
-width: 300px;
-height: 245px;
+width: 50vw;
+height: 30vh;
 border-radius: 20px 20px 0px 0px;
 }
 h1 {
@@ -66,13 +65,14 @@ h2 {
 
 p {
     color: var(--neutral2);
-    padding: 5px;
+    padding: 10px;
 }
 
 .price {
     color: var(--primaria1);
     font-family: var(--font2);
     font-size: 2em;
+    padding: 10px;
 }
 
 p s {
@@ -83,9 +83,9 @@ p s {
 .cart {
     background-color: var(--primaria1);
 
-    padding: 5px;
-    margin: 20px;
-    width: 250px;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
     text-align: center;
     border-radius: 10px;
 
@@ -96,8 +96,6 @@ p s {
 }
 
 footer{
-    padding-top: 20px;
-    margin: auto;
     font-family: var(--font2);
     font-size: 11px; 
     color: hsl(228, 45%, 44%);
