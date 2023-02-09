@@ -10,18 +10,31 @@ Grandes telas: acima de 1201px
 */
 
 @media screen and (min-width: 768px){
-    section{
-        width: 80vw;
+    section#layout {
+        width: 45vw;
+        height: 65vh;
     }
-    div#imagem{
+    section#layout > div#imagem {
         float: left;
-        width: 30%;
+        width: 50%;
         height: 100%;
+        background-image: url(../images/image-product-desktop.jpg);
     }
-    div#content{
+    section#layout > div#content {
         float: right;
-        width: 70%;
-        height: 100%;
-    }    
-
+        width: 50%;
+        padding: 20px;
+    }
+    h1 {
+        padding: 20px;
+        font-size: 700;
+    }
+    h2 {
+        padding: 20px;
+        font-size: 700;
+    }
+    p {
+        padding: 20px;
+        font-size: 14px;
+    }
 }
