@@ -24,21 +24,17 @@
 body, html {
     background-color: var(--primaria2);
     font-family: var(--font1);
-}
-main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 section#layout {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     width: 278px;
-    height: 550px;
+    height: 560px;
     background-color: white;
     border-radius: 10px;
 }
@@ -50,6 +46,9 @@ section#layout > div#imagem {
     width: 280px;
     height: 200px;
 
+}
+#content{
+    padding: 0.5em;   
 }
 h1 {
     font-family: var(--font1);
@@ -66,7 +65,7 @@ h2 {
 
 p {
     color: var(--neutral2);
-    padding: 10px;
+    padding: 0.3em;
 }
 
 .price {
@@ -74,6 +73,11 @@ p {
     font-family: var(--font2);
     font-size: 2em;
     padding: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding-bottom: .5em;
 }
 
 p s {
@@ -85,10 +89,9 @@ p s {
     background-color: var(--primaria1);
 
     padding: 10px;
-    margin: auto;
-    width: 80%;
+    width: 100%;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
 
 }
 .cart > a {
@@ -105,6 +108,8 @@ p s {
 
 }
 footer{
+    position: absolute;
+    bottom: 0;
     font-family: var(--font2);
     font-size: 11px; 
     color: hsl(228, 45%, 44%);
