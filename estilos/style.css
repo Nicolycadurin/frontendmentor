@@ -88,7 +88,7 @@ p s {
     margin: auto;
     width: 80%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
 
 }
 .cart > a {
@@ -97,8 +97,13 @@ p s {
 }
 .cart:hover {
     background-color: hsl(159, 49%, 21%);
+    cursor: pointer;
 }
+.cart > .material-symbols-outlined {
+    color: var(--primaria2);
+    margin-right: 10px;
 
+}
 footer{
     font-family: var(--font2);
     font-size: 11px; 
